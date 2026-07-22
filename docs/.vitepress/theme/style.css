@@ -218,28 +218,26 @@ section {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 1.5rem;
-  height: 1.5rem;
-  border: 1px solid var(--hairline);
-  background: var(--surface);
-  border-radius: 2px;
+  width: 1.15rem;
+  height: 1.15rem;
+  border: none;
+  background: none;
   cursor: pointer;
   color: var(--muted);
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   vertical-align: middle;
-  margin-left: 0.15rem;
+  margin-left: 0.1rem;
   transition: all 0.2s ease;
   position: relative;
+  border-radius: 2px;
 }
 
 .copy-btn:hover {
-  border-color: var(--primary);
   color: var(--primary);
   background: var(--primary-p);
 }
 
 .copy-btn.copied {
-  border-color: var(--primary);
   background: var(--primary);
   color: #fff;
 }
