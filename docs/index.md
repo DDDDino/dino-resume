@@ -4,7 +4,7 @@ layout: false
 
 <!-- ===== HERO ===== -->
 <header class="hero">
-<div class="overline">Product Manager · AI Application</div>
+<div class="overline">Product Manager</div>
 <h1>丁一诺 <span class="name-weight">· 产品经理</span></h1>
 <div class="subtitle">AI 应用 &nbsp;·&nbsp; 医药数字化 &nbsp;·&nbsp; 搜索推荐策略</div>
 <div class="tags">
@@ -14,24 +14,24 @@ layout: false
 <span>B 端效率工具</span>
 </div>
 <div class="contact">
-<span>📱 15854251918</span>
-<span>✉️ dino_nn@163.com</span>
+<span class="contact-item">📱 15854251918<button class="copy-btn" data-copy="15854251918" aria-label="复制手机号"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="copy-tip">已复制</span></button></span>
+<span class="contact-item">✉️ dino_nn@163.com<button class="copy-btn" data-copy="dino_nn@163.com" aria-label="复制邮箱"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="copy-tip">已复制</span></button></span>
 <span>📍 北京</span>
 </div>
 </header>
 
 <!-- ===== PROFILE ===== -->
-<section>
+<section id="profile">
 <h2>个人概要</h2>
 <div class="profile">
-<p>计算机硕士背景，具备产品经理、教育与创业复合经历；熟悉 B 端平台业务、跨角色流程与复杂规则抽象。</p>
-<p style="margin-top:0.5rem;">曾在头部新能源车企做车娱及模型语音互动项目；现在 B2B 头部医药平台负责搜索策略、推荐内容分发、交易转化相关内容；近期负责 <strong>AI 审核提效</strong>相关产品，覆盖用户端、商家侧、运营侧等多角色协同场景。</p>
-<p style="margin-top:0.5rem;">擅长将业务问题拆解为<strong>流程、规则、指标与系统方案</strong>，具备取数分析、需求建模、跨团队推进和 AI 工具辅助产品工作的能力。下一步希望转向 AI 应用、医药数字化或搜索/推荐策略方向，做更有行业与系统壁垒的产品。</p>
+<p><strong>计算机硕士背景</strong>，具备产品经理、教育与创业复合经历；熟悉 B 端平台业务、跨角色流程与复杂规则抽象。</p>
+<p>曾在头部新能源车企做车娱及模型语音互动项目；现在 B2B 头部医药平台负责搜索策略、推荐内容分发、交易转化相关内容；近期负责 <strong>AI 审核提效</strong>相关产品，覆盖用户端、商家侧、运营侧等多角色协同场景。</p>
+<p>擅长将业务问题拆解为<strong>流程、规则、指标与系统方案</strong>，具备取数分析、需求建模、跨团队推进和 AI 工具辅助产品工作的能力。下一步希望转向 AI 应用、医药数字化或搜索/推荐策略方向，做更有行业与系统壁垒的产品。</p>
 </div>
 </section>
 
 <!-- ===== STRENGTHS ===== -->
-<section>
+<section id="strengths">
 <h2>核心能力</h2>
 <div class="strengths">
 
@@ -71,7 +71,7 @@ layout: false
 </section>
 
 <!-- ===== SELECTED PROJECTS ===== -->
-<section>
+<section id="projects">
 <h2>重点项目</h2>
 
 <article class="project">
@@ -137,7 +137,7 @@ layout: false
 </section>
 
 <!-- ===== EXPERIENCE ===== -->
-<section>
+<section id="experience">
 <h2>工作经历</h2>
 
 <div class="exp-item">
@@ -170,7 +170,7 @@ layout: false
 </section>
 
 <!-- ===== EDUCATION ===== -->
-<section>
+<section id="education">
 <h2>教育背景</h2>
 
 <div class="edu-block">
@@ -178,7 +178,7 @@ layout: false
 <span class="edu-school">北京邮电大学（休学）</span>
 <span class="edu-date">2021 – 2025</span>
 </div>
-<div class="edu-line" style="font-size:0.84rem;color:var(--body, oklch(0.4 0.01 85));">
+<div class="edu-line" style="font-size:0.84rem;color:var(--body);">
 <span>计算机科学与技术 · 硕士</span>
 </div>
 <div class="edu-detail">研究方向：自然语言处理</div>
@@ -189,7 +189,7 @@ layout: false
 <span class="edu-school">青岛大学</span>
 <span class="edu-date">2014 – 2018</span>
 </div>
-<div class="edu-line" style="font-size:0.84rem;color:var(--body, oklch(0.4 0.01 85));">
+<div class="edu-line" style="font-size:0.84rem;color:var(--body);">
 <span>软件工程 · 本科</span>
 </div>
 <div class="edu-detail">主修课程：C 语言程序设计、数据结构、计算机组成原理、Java</div>
@@ -198,7 +198,7 @@ layout: false
 </section>
 
 <!-- ===== SKILLS ===== -->
-<section>
+<section id="skills">
 <h2>工具与技能</h2>
 <div class="skills-grid">
 <div><span class="sk-label">产品工具</span>&ensp;<span class="sk-value">Axure / Figma / Xmind / Visio / 墨刀</span></div>
