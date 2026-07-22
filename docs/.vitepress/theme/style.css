@@ -284,15 +284,17 @@ section {
   font-size: 0.93rem;
   line-height: 1.85;
   max-width: 64ch;
-  margin-bottom: 0.85rem;
-  padding-bottom: 0.85rem;
-  border-bottom: 1px solid var(--hairline);
+  margin-bottom: 0.6rem;
 }
 
-.profile p:last-child {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  border-bottom: none;
+.profile p:first-child::first-letter {
+  font-family: var(--font-serif);
+  font-size: 2.6em;
+  float: left;
+  line-height: 0.75;
+  padding-right: 0.12em;
+  padding-top: 0.04em;
+  color: var(--primary);
 }
 
 /* ---- Strengths ---- */
