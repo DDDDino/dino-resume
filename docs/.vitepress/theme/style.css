@@ -361,6 +361,17 @@ section {
   font-weight: 640;
   font-size: 0.98rem;
   color: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.exp-logo {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 2px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .exp-date {

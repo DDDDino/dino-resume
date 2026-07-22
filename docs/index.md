@@ -142,7 +142,7 @@ layout: false
 
 <div class="exp-item">
 <div class="exp-bar">
-<span class="exp-org">中型医药 B2B 售卖平台</span>
+<span class="exp-org"><img class="exp-logo" :src="'/images/benchuziwu.png'" alt="">本初子午 · 头部医药 B2B 售卖平台</span>
 <span class="exp-date">2024.12 – 至今</span>
 </div>
 <div class="exp-role">交易转化产品经理</div>
@@ -151,7 +151,7 @@ layout: false
 
 <div class="exp-item">
 <div class="exp-bar">
-<span class="exp-org">理想汽车</span>
+<span class="exp-org"><img class="exp-logo" :src="'/images/lixiang.jpg'" alt="">理想汽车</span>
 <span class="exp-date">2022.09 – 2024.08</span>
 </div>
 <div class="exp-role">车机互娱产品经理</div>
@@ -160,7 +160,7 @@ layout: false
 
 <div class="exp-item">
 <div class="exp-bar">
-<span class="exp-org">K12 教育 / 教育创业</span>
+<span class="exp-org"><img class="exp-logo" :src="'/images/k12.png'" alt="">K12 教育 / 教育创业</span>
 <span class="exp-date">2018 – 2021</span>
 </div>
 <div class="exp-role">教师 / 创业成员</div>
