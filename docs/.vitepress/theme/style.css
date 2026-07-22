@@ -474,6 +474,92 @@ section {
   color: var(--muted);
 }
 
+/* ---- Project Screenshot Trigger ---- */
+.ss-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--primary);
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0.15rem 0;
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+}
+.ss-trigger:hover { color: oklch(0.38 0.15 35); }
+.ss-trigger svg { opacity: 0.55; }
+
+/* ---- Lightbox ---- */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: oklch(0 0 0 / 0.78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.lightbox-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightbox-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 92vw;
+  max-height: 92vh;
+}
+
+.lightbox-content img {
+  max-width: 92vw;
+  max-height: 82vh;
+  object-fit: contain;
+  border-radius: 2px;
+  box-shadow: 0 20px 60px oklch(0 0 0 / 0.4);
+}
+
+.lightbox-caption {
+  margin-top: 0.8rem;
+  text-align: center;
+  color: oklch(0.9 0 0);
+  font-size: 0.76rem;
+  letter-spacing: 0.04em;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -2.5rem;
+  right: 0;
+  background: none;
+  border: 1px solid oklch(1 0 0 / 0.2);
+  color: #fff;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  z-index: 10;
+}
+.lightbox-close:hover {
+  background: oklch(1 0 0 / 0.15);
+}
+
 /* ---- Optional Projects ---- */
 .opt-list {
   display: flex;

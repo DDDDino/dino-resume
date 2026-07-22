@@ -17,6 +17,22 @@ const navItems = [
 
 let observer: IntersectionObserver | null = null
 
+const showLightbox = ref(false)
+const lightboxSrc = ref('')
+const lightboxCaption = ref('')
+
+function openLightbox(src: string, caption: string) {
+  lightboxSrc.value = src
+  lightboxCaption.value = caption
+  showLightbox.value = true
+  document.body.style.overflow = 'hidden'
+}
+
+function closeLightbox() {
+  showLightbox.value = false
+  document.body.style.overflow = ''
+}
+
 onMounted(() => {
   observer = new IntersectionObserver(
     (entries) => {
@@ -45,7 +61,6 @@ onMounted(() => {
         btn.classList.add('copied')
         setTimeout(() => btn.classList.remove('copied'), 1500)
       } catch {
-        // Fallback for older browsers
         const ta = document.createElement('textarea')
         ta.value = text
         ta.style.position = 'fixed'
@@ -58,6 +73,20 @@ onMounted(() => {
         setTimeout(() => btn.classList.remove('copied'), 1500)
       }
     })
+  })
+
+  // Lightbox triggers
+  document.querySelectorAll('.ss-trigger').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const src = btn.getAttribute('data-img')
+      const caption = btn.getAttribute('data-caption')
+      if (src) openLightbox(src, caption || '')
+    })
+  })
+
+  // Esc to close
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && showLightbox.value) closeLightbox()
   })
 })
 
@@ -79,5 +108,20 @@ onUnmounted(() => {
       </ul>
     </nav>
     <Content />
+
+    <!-- Lightbox -->
+    <Teleport to="body">
+      <div
+        class="lightbox-overlay"
+        :class="{ show: showLightbox }"
+        @click.self="closeLightbox"
+      >
+        <div class="lightbox-content">
+          <button class="lightbox-close" @click="closeLightbox" aria-label="关闭">✕</button>
+          <img :src="lightboxSrc" :alt="lightboxCaption" />
+          <div class="lightbox-caption" v-if="lightboxCaption">{{ lightboxCaption }}</div>
+        </div>
+      </div>
+    </Teleport>
   </div>
 </template>

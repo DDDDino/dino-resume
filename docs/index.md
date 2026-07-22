@@ -96,6 +96,10 @@ layout: false
 <div class="proj-point"><span class="label">方案</span>设计三方数据自动抓取与任务推送机制，任务生成时预拉取核验数据，管理页面以插件形式结构化展示字段、数据来源、一致性评估；后台增加数据监控方便问题查询；将对应能力抽象为 SKILL 方便季度复查。</div>
 <div class="proj-point"><span class="label">结果</span>质管单 task 平均处理时长缩短 <strong>30%+</strong>，日均节省 <strong>10 人力</strong>。</div>
 <div class="proj-foot">需求挖掘 &nbsp;·&nbsp; 跨团队推进 &nbsp;·&nbsp; AI 工具使用（Vibe Coding）</div>
+<button class="ss-trigger" data-img="images/zhiguan.png" data-caption="质管助手 · 管理页面">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+查看截图
+</button>
 </article>
 
 <article class="project">
@@ -108,6 +112,10 @@ layout: false
 <div class="proj-point"><span class="label">方案</span>通过大模型 NLU 对 query 做意图分类与落域——区分通识问答、直接起播、结构化查询、非结构化查询四类，每类对应不同检索范围与模型链路。结构化查询先调知识库接口并行触发视频检索，结果一并送入大模型做结构化输出。设计多级降级策略（知识库兜底 → 通用回复 → 引导追问）保证高可用，并根据问题类型设计差异化展示模版（比分卡片、赛程列表、积分榜表格）。</div>
 <div class="proj-point"><span class="label">指标框架</span>体育渗透率、闭环完成率（问答→浏览→再问）、NLU 准确率、首条满足率、结构化准确率、P95 端到端延迟、主动推荐 CTR。</div>
 <div class="proj-foot">NLU 意图设计 &nbsp;·&nbsp; 大模型应用链路 &nbsp;·&nbsp; 用户偏好推荐 &nbsp;·&nbsp; 多级降级策略</div>
+<button class="ss-trigger" data-img="images/liai.png" data-caption="理想同学 · 体育赛事智能问答">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+查看截图
+</button>
 </article>
 
 <article class="project">
@@ -132,6 +140,10 @@ layout: false
 <div class="proj-point"><span class="label">方案</span>Feed 接入用户实时搜索/点击行为配合意图识别提升推荐品 SPU 准确度，通过用户分类按规则找对应 SKU 填充 Feed 流；人气好店结合下单偏好、资质重合及店铺质量做推荐排序与运营位干预，均有重排打散。</div>
 <div class="proj-point"><span class="label">结果</span>上线两周，首页 Feed PV 曝光转化率提升 <strong>14.8%</strong>，GMV 提升 <strong>13.1%</strong>；人气好店 UV 曝光转化 <strong>3.1%</strong>，日均 GMV 200w+。</div>
 <div class="proj-foot">推荐系统 &nbsp;·&nbsp; 策略设计 &nbsp;·&nbsp; 数据闭环 &nbsp;·&nbsp; 跨团队推进</div>
+<button class="ss-trigger" data-img="images/home.png" data-caption="首页 Feed · 人气好店推荐">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+查看截图
+</button>
 </article>
 
 </section>
