@@ -369,8 +369,8 @@ section {
 .exp-logo {
   width: 1.2rem;
   height: 1.2rem;
-  border-radius: 2px;
-  object-fit: contain;
+  border-radius: 50%;
+  object-fit: cover;
   flex-shrink: 0;
 }
 
