@@ -287,14 +287,13 @@ section {
   margin-bottom: 0.6rem;
 }
 
-.profile p:first-child::first-letter {
-  font-family: var(--font-serif);
-  font-size: 2.6em;
-  float: left;
-  line-height: 0.75;
-  padding-right: 0.12em;
-  padding-top: 0.04em;
+.profile .lead {
+  font-weight: 650;
   color: var(--primary);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-right: 0.35rem;
 }
 
 /* ---- Strengths ---- */
