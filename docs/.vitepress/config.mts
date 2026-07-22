@@ -6,5 +6,8 @@ export default defineConfig({
   lang: 'zh-CN',
   base: '/dino-resume/',
   appearance: false,
+  head: [
+    ['script', { defer: '', src: 'https://cloud.umami.is/script.js', 'data-website-id': '0579b4a3-e1c4-4c38-83a2-fe6c25dc67bf' }],
+  ],
   themeConfig: {},
 })
