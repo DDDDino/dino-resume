@@ -504,6 +504,34 @@ section {
   margin-bottom: 0.4rem;
 }
 
+/* ---- Project Sub-items ---- */
+.proj-sub {
+  font-size: 0.83rem;
+  line-height: 1.65;
+  margin-bottom: 0.35rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.proj-sub::before {
+  content: '';
+  position: absolute;
+  left: 0.3rem;
+  top: 0.55em;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--primary);
+  opacity: 0.5;
+}
+
+.sub-label {
+  font-weight: 650;
+  font-size: 0.75rem;
+  color: var(--ink);
+  margin-right: 0.3rem;
+}
+
 .proj-point .label {
   font-weight: 650;
   font-size: 0.7rem;
