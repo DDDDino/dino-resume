@@ -118,7 +118,7 @@ onUnmounted(() => {
       >
         <div class="lightbox-content">
           <button class="lightbox-close" @click="closeLightbox" aria-label="关闭">✕</button>
-          <img :src="lightboxSrc" :alt="lightboxCaption" />
+          <img v-if="showLightbox" :key="lightboxSrc" :src="lightboxSrc" :alt="lightboxCaption" />
           <div class="lightbox-caption" v-if="lightboxCaption">{{ lightboxCaption }}</div>
         </div>
       </div>
