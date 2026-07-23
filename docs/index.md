@@ -76,7 +76,9 @@ layout: false
 <div class="proj-meta">2024.04 – 2024.07 &nbsp;·&nbsp; 核心负责 &nbsp;·&nbsp; 覆盖欧洲杯 + 奥运会周期</div>
 <div class="proj-point"><span class="label">背景</span>2024 体育大年，车内用户对赛事实时信息有刚需，但语音助手对复杂高时效 query 支持薄弱——无法区分问题类型、缺少结构化回复、用户问完即走。</div>
 <div class="proj-point"><span class="label">方案</span>通过大模型 NLU 对 query 做意图分类与落域——区分通识问答、直接起播、结构化查询、非结构化查询四类，每类对应不同检索范围与模型链路。结构化查询先调知识库接口并行触发视频检索，结果一并送入大模型做结构化输出。设计多级降级策略（知识库兜底 → 通用回复 → 引导追问）保证高可用，并根据问题类型设计差异化展示模版（比分卡片、赛程列表、积分榜表格）。</div>
-<div class="proj-point"><span class="label">指标框架</span>体育渗透率、闭环完成率（问答→浏览→再问）、NLU 准确率、首条满足率、结构化准确率、P95 端到端延迟、主动推荐 CTR。</div>
+<div class="proj-point"><span class="label">结果</span>灰度中离职未能拿到结果数据。若做数据结果分析，会从以下维度展开：</div>
+<div class="proj-point" style="margin-top:0.5rem;"><strong style="font-size:0.76rem;">业务数据</strong> — 体育渗透率（核心指标）、闭环完成率（问答→浏览→再问）、主动推荐 CTR</div>
+<div class="proj-point"><strong style="font-size:0.76rem;">质量数据</strong> — NLU 准确率（核心指标）、首条满足率（核心指标）、结构化准确率、P95 端到端延迟</div>
 <div class="proj-foot">NLU 意图设计 &nbsp;·&nbsp; 大模型应用链路 &nbsp;·&nbsp; 用户偏好推荐 &nbsp;·&nbsp; 多级降级策略</div>
 <button class="ss-trigger" data-img="images/liai.png" data-caption="理想同学 · 体育赛事智能问答">
 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
