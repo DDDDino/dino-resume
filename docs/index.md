@@ -84,6 +84,10 @@ layout: false
 <div class="proj-point"><span class="label">方案</span>抽象药品审核规则，搭建 OCR 识别、三方爬虫数据与 Web Search 数据的交叉验证及规则融合链路，输出各字段建议值、来源与置信度以及驳回或通过建议，支持审核人员在工作台内完成核验与表单一键导入。</div>
 <div class="proj-point"><span class="label">结果</span>审核耗时降低 <strong>60%+</strong>，字段准确率 / 采纳率 <strong>92%</strong>，覆盖普药、保健品、医疗器械多个类目。</div>
 <div class="proj-foot">复杂业务抽象 &nbsp;·&nbsp; 跨团队推进 &nbsp;·&nbsp; AI 项目自主挖掘及落地</div>
+<button class="ss-trigger" data-img="images/shenhe.png" data-caption="药品审核智能助手 · 审核工作台">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+查看截图
+</button>
 </article>
 
 <article class="project">
