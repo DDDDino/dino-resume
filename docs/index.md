@@ -30,51 +30,19 @@ layout: false
 </div>
 </section>
 
-<!-- ===== STRENGTHS ===== -->
-<section id="strengths">
-<h2>核心能力</h2>
-<div class="strengths">
-
-<div class="str-item">
-<div class="str-head">
-<span class="str-name">AI 应用与审核提效</span>
-<span class="str-proof">药品审核智能助手 · 质管助手</span>
+<!-- ===== ABILITY TAGS ===== -->
+<div class="ability-cloud">
+<a class="ability-tag" data-target="proj-shenhe">AI 应用产品</a>
+<a class="ability-tag" data-target="proj-zhiguan">B端流程优化</a>
+<a class="ability-tag" data-target="proj-sousuo">搜索策略</a>
+<a class="ability-tag" data-target="proj-feed">推荐分发</a>
 </div>
-<div class="str-desc">OCR 识别、爬虫数据、Web Search、多源数据交叉验证、规则融合、审核建议生成、工作台插件嵌入</div>
-</div>
-
-<div class="str-item">
-<div class="str-head">
-<span class="str-name">大模型应用链路设计</span>
-<span class="str-proof">理想同学体育赛事智能问答</span>
-</div>
-<div class="str-desc">NLU 意图分类与落域、多类型 query 差异化检索链路、知识库 + 视频检索并行召回、大模型结构化输出、多级降级策略</div>
-</div>
-
-<div class="str-item">
-<div class="str-head">
-<span class="str-name">搜索与推荐策略</span>
-<span class="str-proof">搜索意图动态分流 · 首页 Feed 实时分发</span>
-</div>
-<div class="str-desc">分词词典、意图 SPU、召回兜底、商品质量分、规则组 / 算法组效果评估、Feed 实时行为推荐</div>
-</div>
-
-<div class="str-item">
-<div class="str-head">
-<span class="str-name">数据分析与指标设计</span>
-<span class="str-proof">组合购报表 · Feed 明细 · 重水剂分析</span>
-</div>
-<div class="str-desc">SQL、指标口径定义、PV / UV、曝光点击、支付 GMV、转化率、复购周期、区域 / 客户类型占比</div>
-</div>
-
-</div>
-</section>
 
 <!-- ===== SELECTED PROJECTS ===== -->
 <section id="projects">
 <h2>重点项目</h2>
 
-<article class="project">
+<article class="project" id="proj-shenhe" data-abilities="AI 应用产品">
 <div class="proj-row1">
 <span class="proj-name">药品审核智能助手</span>
 <span class="proj-tag">AI 应用 + 审核提效</span>
@@ -90,7 +58,7 @@ layout: false
 </button>
 </article>
 
-<article class="project">
+<article class="project" id="proj-zhiguan" data-abilities="AI 应用产品,B端流程优化">
 <div class="proj-row1">
 <span class="proj-name">质管助手（Vibe Coding 项目）</span>
 <span class="proj-tag">B 端效率 + 合规审核</span>
@@ -106,7 +74,7 @@ layout: false
 </button>
 </article>
 
-<article class="project">
+<article class="project" id="proj-lixiang" data-abilities="AI 应用产品">
 <div class="proj-row1">
 <span class="proj-name">理想同学体育赛事智能问答</span>
 <span class="proj-tag">车载语音 AI + 内容生态</span>
@@ -122,7 +90,7 @@ layout: false
 </button>
 </article>
 
-<article class="project">
+<article class="project" id="proj-sousuo" data-abilities="搜索策略">
 <div class="proj-row1">
 <span class="proj-name">搜索意图动态分流优化</span>
 <span class="proj-tag">搜索策略 + 转化提升</span>
@@ -134,7 +102,7 @@ layout: false
 <div class="proj-foot">数据分析 &nbsp;·&nbsp; 策略设计 &nbsp;·&nbsp; 数据闭环</div>
 </article>
 
-<article class="project">
+<article class="project" id="proj-feed" data-abilities="推荐分发">
 <div class="proj-row1">
 <span class="proj-name">首页 Feed 实时行为分发 + 人气好店推荐</span>
 <span class="proj-tag">个性化分发</span>

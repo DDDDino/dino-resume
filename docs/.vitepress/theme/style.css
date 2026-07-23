@@ -296,7 +296,50 @@ section {
   margin-right: 0.35rem;
 }
 
-/* ---- Strengths ---- */
+/* ---- Ability Tag Cloud ---- */
+.ability-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 1.8rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.ability-tag {
+  font-size: 0.72rem;
+  padding: 0.22rem 0.65rem;
+  border: 1px solid var(--primary-p);
+  border-radius: 2px;
+  color: var(--primary);
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  transition: all 0.2s ease;
+  user-select: none;
+  background: var(--bg);
+}
+
+.ability-tag:hover {
+  background: var(--primary-p);
+  border-color: var(--primary);
+}
+
+.ability-tag.active {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+/* ---- Project Highlight ---- */
+.project.highlight {
+  border-color: var(--primary) !important;
+  background: oklch(0.97 0.03 35) !important;
+  box-shadow: 0 0 0 3px oklch(0.93 0.04 35 / 0.4);
+  transition: border-color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ---- Strengths (legacy, now unused) ---- */
 .strengths {
   display: flex;
   flex-direction: column;
