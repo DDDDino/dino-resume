@@ -158,8 +158,8 @@ section {
 /* ---- Hero ---- */
 .hero {
   margin-bottom: 3.8rem;
-  padding-bottom: 3rem;
-  border-bottom: 1px solid var(--hairline);
+  padding-bottom: 0;
+  border-bottom: none;
 }
 
 .hero .overline {
@@ -457,10 +457,6 @@ section {
               transform 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-.project:first-of-type {
-  border-color: var(--primary-l);
-  background: oklch(0.99 0.003 35);
-}
 
 .project:hover {
   box-shadow: 0 4px 24px oklch(0 0 0 / 0.07);
@@ -701,8 +697,6 @@ section {
 /* ---- Download Button ---- */
 .download-row {
   margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--hairline);
   text-align: center;
 }
 

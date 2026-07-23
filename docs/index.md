@@ -7,12 +7,6 @@ layout: false
 <div class="overline">Product Manager</div>
 <h1>丁一诺 <span class="name-weight">· 产品经理</span></h1>
 <div class="subtitle">AI 应用 &nbsp;·&nbsp; 医药数字化 &nbsp;·&nbsp; 搜索推荐策略</div>
-<div class="tags">
-<span>AI 应用产品</span>
-<span>医药数字化</span>
-<span>搜索推荐策略</span>
-<span>B 端效率工具</span>
-</div>
 <div class="contact">
 <span class="contact-item">📱 15854251918<button class="copy-btn" data-copy="15854251918" aria-label="复制手机号"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="copy-tip">已复制</span></button></span>
 <span class="contact-item">✉️ dino_nn@163.com<button class="copy-btn" data-copy="dino_nn@163.com" aria-label="复制邮箱"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="copy-tip">已复制</span></button></span>
@@ -159,7 +153,7 @@ layout: false
 
 <div class="edu-block">
 <div class="edu-line">
-<span class="edu-school">北京邮电大学（休学）</span>
+<span class="edu-school">北京邮电大学（结业）</span>
 <span class="edu-date">2021 – 2025</span>
 </div>
 <div class="edu-line" style="font-size:0.84rem;color:var(--body);">
@@ -188,7 +182,6 @@ layout: false
 <div><span class="sk-label">产品工具</span>&ensp;<span class="sk-value">Axure / Figma / Xmind / Visio / 墨刀</span></div>
 <div><span class="sk-label">数据能力</span>&ensp;<span class="sk-value">SQL、指标口径设计、漏斗分析、转化分析</span></div>
 <div><span class="sk-label">AI 工具</span>&ensp;<span class="sk-value">Claude Code / Codex 等，PRD 辅助、竞品拆解、规则梳理、文案与数据分析</span></div>
-<div><span class="sk-label">领域关键词</span>&ensp;<span class="sk-value">医药 B2B、AI 审核、大模型应用、NLU、搜索召回、首页推荐、交易转化、资质审核、OCR、Web Search、规则融合</span></div>
 <div><span class="sk-label">语言</span>&ensp;<span class="sk-value">英语六级，口语可进行日常沟通</span></div>
 </div>
 </section>

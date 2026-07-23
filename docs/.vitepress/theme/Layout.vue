@@ -106,7 +106,10 @@ onMounted(() => {
 
       // Highlight all matching projects
       setTimeout(() => matches.forEach(m => m.classList.add('highlight')), 300)
-      setTimeout(() => matches.forEach(m => m.classList.remove('highlight')), 2500)
+      setTimeout(() => {
+        matches.forEach(m => m.classList.remove('highlight'))
+        tag.classList.remove('active')
+      }, 2000)
     })
   })
 
