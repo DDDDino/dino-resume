@@ -32,20 +32,20 @@ layout: false
 
 <!-- ===== ABILITY TAGS ===== -->
 <div class="ability-cloud">
-<a class="ability-tag" data-target="proj-shenhe">AI 应用产品</a>
-<a class="ability-tag" data-target="proj-zhiguan">B端流程优化</a>
-<a class="ability-tag" data-target="proj-sousuo">搜索策略</a>
-<a class="ability-tag" data-target="proj-feed">推荐分发</a>
+<a class="ability-tag" data-ability="AI 应用产品">AI 应用产品</a>
+<a class="ability-tag" data-ability="B端流程优化">B端流程优化</a>
+<a class="ability-tag" data-ability="搜索策略">搜索策略</a>
+<a class="ability-tag" data-ability="推荐分发">推荐分发</a>
 </div>
 
 <!-- ===== SELECTED PROJECTS ===== -->
 <section id="projects">
 <h2>重点项目</h2>
 
-<article class="project" id="proj-shenhe" data-abilities="AI 应用产品">
+<article class="project" id="proj-shenhe" data-abilities="AI 应用产品,B端流程优化">
 <div class="proj-row1">
 <span class="proj-name">药品审核智能助手</span>
-<span class="proj-tag">AI 应用 + 审核提效</span>
+<span class="proj-tag">AI应用 + B端提效</span>
 </div>
 <div class="proj-meta">2026.06 – 至今 &nbsp;·&nbsp; 核心负责</div>
 <div class="proj-point"><span class="label">背景</span>平台日均新增药品上报 1000+，高峰期人工审核积压阻塞商业上架。AI 赋能下可低成本优化审核人效，设计了药品审核自动化插件。</div>
@@ -61,7 +61,7 @@ layout: false
 <article class="project" id="proj-zhiguan" data-abilities="AI 应用产品,B端流程优化">
 <div class="proj-row1">
 <span class="proj-name">质管助手（Vibe Coding 项目）</span>
-<span class="proj-tag">B 端效率 + 合规审核</span>
+<span class="proj-tag">AI应用 + B端提效</span>
 </div>
 <div class="proj-meta">2026.05 &nbsp;·&nbsp; 核心负责</div>
 <div class="proj-point"><span class="label">背景</span>资质是用户可购买药品范围的凭证，质管每日接到资质变更/新增工单约 3000+，每个资质均需人工去企查查、药监等三方网站核验信息一致性，耗时耗力。</div>
@@ -93,7 +93,7 @@ layout: false
 <article class="project" id="proj-sousuo" data-abilities="搜索策略">
 <div class="proj-row1">
 <span class="proj-name">搜索意图动态分流优化</span>
-<span class="proj-tag">搜索策略 + 转化提升</span>
+<span class="proj-tag">搜索策略 + 低成本转化提升</span>
 </div>
 <div class="proj-meta">2026.03 &nbsp;·&nbsp; 核心负责</div>
 <div class="proj-point"><span class="label">背景</span>数据分析发现，相同搜索词在两组并行实验策略中转化率有明显倾向，为提升搜索转化率，按搜索意图词进行搜索流量动态分配。</div>
@@ -105,7 +105,7 @@ layout: false
 <article class="project" id="proj-feed" data-abilities="推荐分发">
 <div class="proj-row1">
 <span class="proj-name">首页 Feed 实时行为分发 + 人气好店推荐</span>
-<span class="proj-tag">个性化分发</span>
+<span class="proj-tag">个性化推荐</span>
 </div>
 <div class="proj-meta">2026.04 – 2026.05 &nbsp;·&nbsp; 核心负责</div>
 <div class="proj-point"><span class="label">背景</span>首页组件不能根据用户画像和实时行为做差异化推荐，组件点击率和转化率低于行业水平，高价值流量浪费在首页。</div>

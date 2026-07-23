@@ -87,9 +87,8 @@ onMounted(() => {
   document.querySelectorAll('.ability-tag').forEach((tag) => {
     tag.addEventListener('click', (e) => {
       e.preventDefault()
-      const targetId = tag.getAttribute('data-target')
-      const target = targetId ? document.getElementById(targetId) : null
-      if (!target) return
+      const ability = tag.getAttribute('data-ability')
+      if (!ability) return
 
       // Deactivate all tags, activate clicked
       document.querySelectorAll('.ability-tag').forEach(t => t.classList.remove('active'))
@@ -98,12 +97,16 @@ onMounted(() => {
       // Remove highlight from all projects
       document.querySelectorAll('.project.highlight').forEach(p => p.classList.remove('highlight'))
 
-      // Scroll to target
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      // Find all matching projects
+      const matches = document.querySelectorAll(`.project[data-abilities*="${ability}"]`)
+      if (matches.length === 0) return
 
-      // Highlight target after scroll
-      setTimeout(() => target.classList.add('highlight'), 300)
-      setTimeout(() => target.classList.remove('highlight'), 2500)
+      // Scroll to first match
+      matches[0].scrollIntoView({ behavior: 'smooth', block: 'start' })
+
+      // Highlight all matching projects
+      setTimeout(() => matches.forEach(m => m.classList.add('highlight')), 300)
+      setTimeout(() => matches.forEach(m => m.classList.remove('highlight')), 2500)
     })
   })
 

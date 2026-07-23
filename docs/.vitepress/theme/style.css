@@ -331,12 +331,12 @@ section {
   border-color: var(--primary);
 }
 
-/* ---- Project Highlight ---- */
-.project.highlight {
+/* ---- Project Tag Highlight ---- */
+.project.highlight .proj-tag {
+  background: var(--primary) !important;
+  color: #fff !important;
   border-color: var(--primary) !important;
-  background: oklch(0.97 0.03 35) !important;
-  box-shadow: 0 0 0 3px oklch(0.93 0.04 35 / 0.4);
-  transition: border-color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 /* ---- Strengths (legacy, now unused) ---- */
