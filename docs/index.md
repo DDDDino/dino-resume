@@ -92,7 +92,7 @@ layout: false
 <span class="proj-tag">搜索策略 + 低成本转化提升</span>
 </div>
 <div class="proj-meta">2026.03 &nbsp;·&nbsp; 核心负责</div>
-<div class="proj-point"><span class="label">背景</span>数据分析发现，相同搜索词在两组并行实验策略中转化率有明显倾向，为提升搜索转化率，按搜索意图词进行搜索流量动态分配。</div>
+<div class="proj-point"><span class="label">背景</span>数据分析发现，相同搜索词在两组并行运行的实验策略中转化率有明显的倾向（如搜索 PV 接近的前提下，"感冒灵颗粒"近 30 天转化率 A 组 28 天都优于 B 组），为提升搜索转化率，根据搜索意图词进行搜索流量的动态分配（按搜索词来划分去哪个实验组）。</div>
 <div class="proj-point"><span class="label">方案</span>搜索关键词映射意图 SPU，追踪近 30 天两个实验组下各意图 SPU 的转化率及成交金额落表统计，系统根据当前搜索意图按规则选择历史表现更优的策略承接流量。</div>
 <div class="proj-point"><span class="label">结果</span>项目从开发到上线一周，在当前转化效果最好的实验组基础上，搜索转化率提升 <strong>1.1%</strong>。</div>
 <div class="proj-foot">数据分析 &nbsp;·&nbsp; 策略设计 &nbsp;·&nbsp; 数据闭环</div>
