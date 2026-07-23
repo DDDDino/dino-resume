@@ -105,7 +105,8 @@ layout: false
 </div>
 <div class="proj-meta">2026.04 – 2026.05 &nbsp;·&nbsp; 核心负责</div>
 <div class="proj-point"><span class="label">背景</span>首页组件不能根据用户画像和实时行为做差异化推荐，组件点击率和转化率低于行业水平，高价值流量浪费在首页。</div>
-<div class="proj-point"><span class="label">方案</span>Feed 接入用户实时搜索/点击行为配合意图识别提升推荐品 SPU 准确度，通过用户分类按规则找对应 SKU 填充 Feed 流；人气好店结合下单偏好、资质重合及店铺质量做推荐排序与运营位干预，均有重排打散。</div>
+<div class="proj-point"><span class="label">方案</span><strong>首页Feed：</strong>接入用户实时搜索/点击行为，配合意图识别提升推荐品 SPU 准确度，再通过用户分类按规则找对应的 SKU 填充 Feed 流；并将原搜索未下单下次搜索触发的限时补贴同时放到首页 Feed 做激励，促进转化。</div>
+<div class="proj-point"><strong>人气好店组件：</strong>通过结合用户下单偏好、资质重合情况以及商业店铺质量做店铺推荐及运营位配置排序干预，并根据店铺性质、曝光情况做重排时的打散限制。</div>
 <div class="proj-point"><span class="label">结果</span>上线两周，首页 Feed PV 曝光转化率提升 <strong>14.8%</strong>，GMV 提升 <strong>13.1%</strong>；人气好店 UV 曝光转化 <strong>3.1%</strong>，日均 GMV 200w+。</div>
 <div class="proj-foot">推荐系统 &nbsp;·&nbsp; 策略设计 &nbsp;·&nbsp; 数据闭环 &nbsp;·&nbsp; 跨团队推进</div>
 <button class="ss-trigger" data-img="images/home.png" data-caption="首页 Feed · 人气好店推荐">
