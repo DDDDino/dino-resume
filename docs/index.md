@@ -30,17 +30,17 @@ layout: false
 </div>
 </section>
 
-<!-- ===== ABILITY TAGS ===== -->
+<!-- ===== SELECTED PROJECTS ===== -->
+<section id="projects">
+<div class="section-head-row">
+<h2>重点项目</h2>
 <div class="ability-cloud">
 <a class="ability-tag" data-ability="AI 应用产品">AI 应用产品</a>
 <a class="ability-tag" data-ability="B端流程优化">B端流程优化</a>
 <a class="ability-tag" data-ability="搜索策略">搜索策略</a>
 <a class="ability-tag" data-ability="推荐分发">推荐分发</a>
 </div>
-
-<!-- ===== SELECTED PROJECTS ===== -->
-<section id="projects">
-<h2>重点项目</h2>
+</div>
 
 <article class="project" id="proj-shenhe" data-abilities="AI 应用产品,B端流程优化">
 <div class="proj-row1">

@@ -296,19 +296,30 @@ section {
   margin-right: 0.35rem;
 }
 
+/* ---- Section Head Row ---- */
+.section-head-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.section-head-row h2 {
+  margin-bottom: 0;
+}
+
 /* ---- Ability Tag Cloud ---- */
 .ability-cloud {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem;
-  margin-bottom: 1.8rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--hairline);
+  gap: 0.3rem;
 }
 
 .ability-tag {
-  font-size: 0.72rem;
-  padding: 0.22rem 0.65rem;
+  font-size: 0.68rem;
+  padding: 0.16rem 0.5rem;
   border: 1px solid var(--primary-p);
   border-radius: 2px;
   color: var(--primary);
