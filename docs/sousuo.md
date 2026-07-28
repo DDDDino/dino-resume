@@ -36,7 +36,23 @@ layout: false
 </div>
 </div>
 
-<!-- Project 1: 搜索意图 -->
+<!-- Project 1: 搜索分词 -->
+<article class="project" id="proj-fenci" data-abilities="搜索策略">
+<div class="proj-row1">
+<span class="proj-name">搜索分词优化</span>
+<span class="proj-tag">搜索质量 + NER 实体识别</span>
+</div>
+<div class="proj-meta">2025.10 – 2026.03 &nbsp;·&nbsp; 核心负责</div>
+<div class="proj-point"><span class="label">背景</span>医药 B2B 搜索 query 高度复杂（如"阿托伐他汀钙片 20mg*7片×4板 辉瑞"），原有词典 + 维特比分词方案存在严重短板：新词无法识别导致无结果、复合名词被拆散（"维生素C"→"维生素"+"C"）、数字符号错误粘连（"粒10g"）、促销信息丢失（"24盒包邮"未解析）。</div>
+<div class="proj-point"><span class="label">方案</span></div>
+<div class="proj-sub"><span class="sub-label">ELECTRA NER + HanLP 融合</span>用 ELECTRA 模型在药品商品数据上训练领域 NER，识别品牌、通用名、剂型、规格、厂家、包邮/促销等实体；HanLP 词典做初分词后由 NER 做结构化识别，构建 brand/core/product/spec/promotion 等多维查询实体。</div>
+<div class="proj-sub"><span class="sub-label">词典兜底策略</span>NER 分词召回 ≤ 10 个商品时，自动触发自定义词典兜底补充召回，两路结果在精排层融合排序，兼顾新词识别与存量覆盖。</div>
+<div class="proj-sub"><span class="sub-label">质量闭环</span>建立 NER 标注对照体系，周期性跑取搜索无结果 bad case 定位分词根因；全链路 NER + 召回 ≤ 30ms；Apollo 开关支持一键热切换，先对 5% 流量做 A/B 实验验证。</div>
+<div class="proj-point"><span class="label">结果</span>分词准确率显著提升，无结果率下降；词典兜底策略有效覆盖 NER 长尾盲区；为后续搜索意图识别与召回排序提供了高质量的实体基础。</div>
+<div class="proj-foot">搜索质量 &nbsp;·&nbsp; NER 模型 &nbsp;·&nbsp; 数据闭环 &nbsp;·&nbsp; A/B 实验</div>
+</article>
+
+<!-- Project 2: 搜索意图 -->
 <article class="project" id="proj-sousuo" data-abilities="搜索策略">
 <div class="proj-row1">
 <span class="proj-name">搜索意图动态分流优化</span>
