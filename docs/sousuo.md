@@ -32,7 +32,6 @@ layout: false
 <a class="ability-tag" data-ability="搜索策略">搜索策略</a>
 <a class="ability-tag" data-ability="推荐分发">推荐分发</a>
 <a class="ability-tag" data-ability="交易转化">交易转化</a>
-<a class="ability-tag" data-ability="AI 应用产品">AI 应用</a>
 </div>
 </div>
 
@@ -100,7 +99,7 @@ layout: false
 </article>
 
 <!-- Project 4: 理想同学 -->
-<article class="project" id="proj-lixiang" data-abilities="AI 应用产品">
+<article class="project" id="proj-lixiang" data-abilities="搜索策略">
 <div class="proj-row1">
 <span class="proj-name">理想同学体育赛事智能问答</span>
 <span class="proj-tag">车载语音 AI + 内容生态</span>
@@ -118,22 +117,6 @@ layout: false
 </button>
 </article>
 
-<!-- Project 5: 药品审核 -->
-<article class="project" id="proj-shenhe" data-abilities="AI 应用产品">
-<div class="proj-row1">
-<span class="proj-name">药品审核智能助手</span>
-<span class="proj-tag">AI应用 + B端提效</span>
-</div>
-<div class="proj-meta">2026.06 – 至今 &nbsp;·&nbsp; 核心负责</div>
-<div class="proj-point"><span class="label">背景</span>平台日均新增药品上报 1000+，高峰期人工审核积压阻塞商业上架。AI 赋能下可低成本优化审核人效，设计了药品审核自动化插件。</div>
-<div class="proj-point"><span class="label">方案</span>抽象药品审核规则，搭建 OCR 识别、三方爬虫数据与 Web Search 数据的交叉验证及规则融合链路，输出各字段建议值、来源与置信度以及驳回或通过建议，支持审核人员在工作台内完成核验与表单一键导入。</div>
-<div class="proj-point"><span class="label">结果</span>审核耗时降低 <strong>60%+</strong>，字段准确率 / 采纳率 <strong>92%</strong>，覆盖普药、保健品、医疗器械多个类目。</div>
-<div class="proj-foot">复杂业务抽象 &nbsp;·&nbsp; 跨团队推进 &nbsp;·&nbsp; AI 项目自主挖掘及落地</div>
-<button class="ss-trigger" data-img="images/shenhe.png" data-caption="药品审核智能助手 · 审核工作台">
-<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-查看截图
-</button>
-</article>
 
 </section>
 
