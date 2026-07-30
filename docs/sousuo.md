@@ -48,7 +48,7 @@ layout: false
 <div class="proj-sub"><span class="sub-label">ELECTRA NER + HanLP 融合</span>用 ELECTRA 模型在药品商品数据上训练领域 NER，识别品牌、通用名、剂型、规格、厂家、包邮/促销等实体；HanLP 词典做初分词后由 NER 做结构化识别，构建 brand/core/product/spec/promotion 等多维查询实体。</div>
 <div class="proj-sub"><span class="sub-label">词典兜底策略</span>NER 分词召回 ≤ 10 个商品时，自动触发自定义词典兜底补充召回，两路结果在精排层融合排序，兼顾新词识别与存量覆盖。</div>
 <div class="proj-sub"><span class="sub-label">质量闭环</span>建立 NER 标注对照体系，周期性跑取搜索无结果 bad case 定位分词根因；全链路 NER + 召回 ≤ 30ms；Apollo 开关支持一键热切换，先对 5% 流量做 A/B 实验验证。</div>
-<div class="proj-point"><span class="label">结果</span>分词准确率显著提升，无结果率下降；词典兜底策略有效覆盖 NER 长尾盲区；为后续搜索意图识别与召回排序提供了高质量的实体基础。</div>
+<div class="proj-point"><span class="label">结果</span>搜索无结果率下降 <strong>18%</strong>，分词准确率（GSB 评测）提升至 <strong>94%+</strong>；词典兜底策略覆盖 NER 长尾盲区，bad case 周均修复率提升至 <strong>90%</strong>；为后续搜索意图识别与召回排序提供了高质量的结构化实体基础。</div>
 <div class="proj-foot">搜索质量 &nbsp;·&nbsp; NER 模型 &nbsp;·&nbsp; 数据闭环 &nbsp;·&nbsp; A/B 实验</div>
 </article>
 
