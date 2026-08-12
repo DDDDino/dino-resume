@@ -86,7 +86,7 @@ layout: false
 <!-- Project 3: 组合购治理 -->
 <article class="project has-drawer" id="proj-zuhe" data-abilities="交易转化" data-drawer-src="/dino-resume/zuhe-flow.html" data-drawer-title="组合购治理 · 分析链路">
 <div class="proj-row1">
-<span class="proj-name">组合购治理与多起拼档位转化优化</span>
+<span class="proj-name">搜索结果后链路的关联购（组合购买）</span>
 <span class="proj-tag">交易转化 + 数据治理</span>
 </div>
 <div class="proj-meta">2025.06 – 2025.07 &nbsp;·&nbsp; 核心负责</div>
@@ -96,6 +96,10 @@ layout: false
 <div class="proj-sub"><span class="sub-label">非 SaaS 用户</span>使用实时分享 + 常用组合用药 + 本地热销的召回排序，结合端侧交互做组合购推荐轮询，对分享品做补贴加成。</div>
 <div class="proj-point"><span class="label">结果</span>SaaS 用户副品日均 PV 曝光转化率 <strong>14.4%</strong>，非 SaaS 用户副品日均 PV 曝光转化率 <strong>1.8%</strong>；整体主副品同购率 <strong>2.7%</strong>，搜索 GMV 在对应试验周期内增量提升 <strong>0.4%</strong>。</div>
 <div class="proj-foot">跨团队推进 &nbsp;·&nbsp; 策略设计 &nbsp;·&nbsp; 交易链路 &nbsp;·&nbsp; 数据驱动</div>
+<button class="ss-trigger" data-img="images/zuhe-screenshot.png" data-caption="搜索结果后链路的关联购 · 分析框架">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+查看截图
+</button>
 </article>
 
 <!-- Project 4: 理想同学 -->
