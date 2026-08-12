@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#fff;display:flex;justify-content:center;align-items:flex-start;padding:20px;min-height:100vh}
+  .container{width:100%;max-width:960px}
+  #diagram{overflow-x:auto}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="mermaid" id="diagram">
+flowchart TB
+    A["搜索 GMV"] --> B["UV"]
+    A --> C["下单转化率"]
+    A --> D["客单价"]
+    B -. "流量成本高" .-> B1["本次不作为主杠杆"]
+    C -. "需保护" .-> C1["护栏指标"]
+    D ==> E["本次突破口"]
+    E --> F{"客单怎么提升？"}
+    F --> F1["推更贵主品"]
+    F --> F2["提高起拼数量"]
+    F --> F3["满减 / 补贴"]
+    F ==> F4["增加关联商品"]
+    F1 -. "可能伤害转化" .-> G["选择组合购"]
+    F2 -. "库存与效期风险" .-> G
+    F3 -. "成本高、难判增量" .-> G
+    F4 -. "不改变主品决策" .-> G
+    G --> H["中间卡点"]
+    H --> H1["副品是否相关？"]
+    H --> H2["是否真实增量？"]
+    H --> H3["起拼档位是否合适？"]
+    H1 --> I{"哪些用户信号更强？"}
+    H2 --> I
+    H3 --> I
+    I --> J["普通行为数据"]
+    I ==> K["SaaS 采购数据"]
+    J --> J1["搜索 / 分享"]
+    J --> J2["常用组合"]
+    J --> J3["本地热销"]
+    K --> K1["历史采购"]
+    K --> K2["库存周期"]
+    K --> K3["采购价"]
+    K1 ==> L["优先选择 SaaS 路线"]
+    K2 ==> L
+    K3 ==> L
+    L --> M["商品映射至 SPU"]
+    M --> N["库存周期 x 价格筛选"]
+    N --> O["剔除自然常购组合"]
+    O --> P["聚合同 SPU 起拼档位"]
+    P --> Q["必要时定向补贴"]
+    J1 --> R["非 SaaS 兜底路线"]
+    J2 --> R
+    J3 --> R
+    Q --> S["A/B 实验"]
+    R --> S
+    S --> T["副品转化"]
+    S --> U["主副品同购"]
+    S --> V["搜索 GMV"]
+    S --> W["主品转化护栏"]
+    T --> T1["SaaS 14.4%"]
+    T --> T2["非 SaaS 1.8%"]
+    U --> U1["同购率 2.7%"]
+    V --> V1["GMV +0.4%"]
+    W --> W1["不干扰主链路"]
+    T1 --> X["项目总结"]
+    T2 --> X
+    U1 --> X
+    V1 --> X
+    W1 --> X
+    X --> X1["组合购不是多推商品"]
+    X --> X2["而是识别真实关联需求"]
+    X --> X3["提升客单，同时保护转化"]
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true,theme:'neutral',flowchart:{useMaxWidth:true,htmlLabels:true,curve:'basis'}})</script>
+</body>
+</html>

@@ -84,7 +84,7 @@ layout: false
 </article>
 
 <!-- Project 3: 组合购治理 -->
-<article class="project" id="proj-zuhe" data-abilities="交易转化">
+<article class="project has-drawer" id="proj-zuhe" data-abilities="交易转化" data-drawer-src="/dino-resume/zuhe-flow.html" data-drawer-title="组合购治理 · 分析链路">
 <div class="proj-row1">
 <span class="proj-name">组合购治理与多起拼档位转化优化</span>
 <span class="proj-tag">交易转化 + 数据治理</span>

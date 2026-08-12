@@ -20,6 +20,10 @@ const showLightbox = ref(false)
 const lightboxSrc = ref('')
 const lightboxCaption = ref('')
 
+const showDrawer = ref(false)
+const drawerSrc = ref('')
+const drawerTitle = ref('')
+
 function openLightbox(src: string, caption: string) {
   lightboxSrc.value = src
   lightboxCaption.value = caption
@@ -29,6 +33,18 @@ function openLightbox(src: string, caption: string) {
 
 function closeLightbox() {
   showLightbox.value = false
+  document.body.style.overflow = ''
+}
+
+function openDrawer(src: string, title: string) {
+  drawerSrc.value = src
+  drawerTitle.value = title
+  showDrawer.value = true
+  document.body.style.overflow = 'hidden'
+}
+
+function closeDrawer() {
+  showDrawer.value = false
   document.body.style.overflow = ''
 }
 
@@ -113,9 +129,23 @@ onMounted(() => {
     })
   })
 
+  // Drawer triggers
+  document.querySelectorAll('.project.has-drawer').forEach((card) => {
+    card.addEventListener('click', (e) => {
+      const target = e.target as HTMLElement
+      if (target.closest('.ss-trigger') || target.closest('button')) return
+      const src = card.getAttribute('data-drawer-src')
+      const title = card.getAttribute('data-drawer-title')
+      if (src) openDrawer(src, title || '')
+    })
+  })
+
   // Esc to close
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && showLightbox.value) closeLightbox()
+    if (e.key === 'Escape') {
+      if (showLightbox.value) closeLightbox()
+      else if (showDrawer.value) closeDrawer()
+    }
   })
 })
 
@@ -149,6 +179,20 @@ onUnmounted(() => {
           <button class="lightbox-close" @click="closeLightbox" aria-label="关闭">✕</button>
           <img v-if="showLightbox" :key="lightboxSrc" :src="lightboxSrc" :alt="lightboxCaption" />
           <div class="lightbox-caption" v-if="lightboxCaption">{{ lightboxCaption }}</div>
+        </div>
+      </div>
+    </Teleport>
+
+    <!-- Drawer -->
+    <Teleport to="body">
+      <div class="drawer-backdrop" :class="{ show: showDrawer }" @click="closeDrawer"></div>
+      <div class="drawer-panel" :class="{ show: showDrawer }">
+        <div class="drawer-close">
+          <span style="font-weight:640;font-size:0.85rem;color:var(--ink);flex:1">{{ drawerTitle }}</span>
+          <button @click="closeDrawer" aria-label="关闭">✕</button>
+        </div>
+        <div class="drawer-body">
+          <iframe :src="drawerSrc" title="分析链路图"></iframe>
         </div>
       </div>
     </Teleport>

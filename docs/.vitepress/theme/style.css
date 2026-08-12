@@ -638,6 +638,62 @@ section {
   background: oklch(1 0 0 / 0.15);
 }
 
+/* ---- Side Drawer ---- */
+.drawer-backdrop {
+  position: fixed; inset: 0; z-index: 300;
+  background: oklch(0 0 0 / 0.4);
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.drawer-backdrop.show { opacity: 1; pointer-events: auto; }
+
+.drawer-panel {
+  position: fixed; top: 0; right: 0; z-index: 301;
+  width: min(560px, 92vw); height: 100vh;
+  background: var(--bg);
+  overflow-y: auto;
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
+  box-shadow: -4px 0 40px oklch(0 0 0 / 0.12);
+}
+.drawer-panel.show { transform: translateX(0); }
+
+.drawer-close {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; justify-content: flex-end;
+  padding: 0.6rem 0.8rem;
+  background: var(--bg);
+  border-bottom: 1px solid var(--hairline);
+}
+.drawer-close button {
+  background: none; border: none; font-size: 1.2rem;
+  cursor: pointer; color: var(--muted);
+  width: 2rem; height: 2rem; display: flex;
+  align-items: center; justify-content: center;
+  border-radius: 50%; transition: background 0.2s;
+}
+.drawer-close button:hover { background: var(--surface); }
+
+.drawer-body { padding: 0.8rem 1.2rem 2rem; }
+.drawer-body iframe {
+  width: 100%; height: 85vh; border: none;
+}
+
+/* Card with drawer trigger */
+.project.has-drawer { cursor: pointer; }
+.project.has-drawer:hover { border-color: var(--primary-l); }
+.project.has-drawer::after {
+  content: '点击查看分析链路 →';
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: 0.03em;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.project.has-drawer:hover::after { opacity: 1; }
+
 /* ---- Optional Projects ---- */
 .opt-list {
   display: flex;
