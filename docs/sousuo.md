@@ -81,6 +81,16 @@ layout: false
 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
 查看截图
 </button>
+<div class="drawer-entry-row">
+<button class="drawer-trigger" data-drawer-src="/dino-resume/feed-flow.html" data-drawer-title="首页 Feed · 分析链路">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h7"/><circle cx="18" cy="15" r="3"/><path d="m20.2 17.2 1.8 1.8"/></svg>
+查看首页 Feed 分析链路
+</button>
+<button class="drawer-trigger" data-drawer-src="/dino-resume/store-flow.html" data-drawer-title="人气好店 · 分析链路">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18l-2-5H5L3 9Z"/><path d="M5 9v11h14V9M9 20v-6h6v6"/></svg>
+查看人气好店分析链路
+</button>
+</div>
 </article>
 
 <!-- Project 3: 组合购治理 -->

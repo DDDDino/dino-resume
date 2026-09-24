@@ -130,6 +130,15 @@ onMounted(() => {
   })
 
   // Drawer triggers
+  document.querySelectorAll('.drawer-trigger').forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation()
+      const src = btn.getAttribute('data-drawer-src')
+      const title = btn.getAttribute('data-drawer-title')
+      if (src) openDrawer(src, title || '')
+    })
+  })
+
   document.querySelectorAll('.project.has-drawer').forEach((card) => {
     card.addEventListener('click', (e) => {
       const target = e.target as HTMLElement

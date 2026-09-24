@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#fff;color:#262626;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;padding:12px 4px 32px}
+  .section{margin:0 0 28px}
+  h2{margin:0 0 6px;font-size:16px;color:#222}
+  p{margin:0 0 12px;font-size:12px;line-height:1.7;color:#6b6b6b}
+  .diagram{width:100%;overflow-x:auto;padding:4px 0 12px}
+  .mermaid{min-width:0}
+</style>
+</head>
+<body>
+<section class="section">
+  <h2>一、为什么要做实时行为分发</h2>
+  <p>先证明“搜索后未下单”不是偶发行为，再判断这部分意图能否在用户回到首页时被重新承接。</p>
+  <div class="mermaid diagram">
+flowchart TB
+    A["原首页：运营配置＋分省热销兜底"] --> B["主要按区域热度分发<br/>无法识别用户刚产生的采购意图"]
+    B --> C{"实时意图是否值得承接？"}
+    C --> C1["统计搜索未下单次数<br/>占当日总搜索次数 30%+"]
+    C1 --> C2["观察同意图词<br/>单日重复搜索占比"]
+    C2 --> C3["分析两次搜索间隔<br/>判断用户能否回到首页"]
+    C3 --> D["需求成立：在首页承接<br/>尚未满足的采购意图"]
+    D --> E["建设召回—排序—策略干预链路"]
+    E --> F["进入首页 A/B 实验<br/>评估转化、GMV 与体验护栏"]
+  </div>
+</section>
+
+<section class="section">
+  <h2>二、首页 Feed 策略链路</h2>
+  <p>从实时用户信号形成候选商品，再依次完成准入过滤、综合排序和重排干预。</p>
+  <div class="mermaid diagram">
+flowchart TB
+    subgraph S["用户信号"]
+        S1["近期搜索词"]
+        S2["商品点击"]
+        S3["搜索后未下单"]
+        S4["历史采购偏好"]
+    end
+
+    subgraph R["1. 候选召回"]
+        R1["Query 归一化"]
+        R2["识别目标 SPU"]
+        R3["召回对应可售 SKU"]
+        R4["库存 / 区域 / 资质等准入过滤"]
+        R5["候选不足时<br/>分省热销商品兜底"]
+    end
+
+    subgraph P["2. 综合排序"]
+        P1["意图匹配程度"]
+        P2["用户采购偏好"]
+        P3["商品供给与质量"]
+        P4["价格、起拼、时效、权益"]
+        P5["形成 SKU 综合优先级"]
+    end
+
+    subgraph RR["3. 重排与干预"]
+        RR1["限时补贴商品干预"]
+        RR2["重复商品控制"]
+        RR3["低质量商品降权"]
+        RR4["运营位与策略优先级处理"]
+        RR5["生成最终 Feed"]
+    end
+
+    S1 --> R1
+    S2 --> R2
+    S3 --> R2
+    S4 --> P2
+    R1 --> R2 --> R3 --> R4
+    R4 --> R5
+    R4 --> P1
+    R5 --> P1
+    P1 --> P5
+    P2 --> P5
+    P3 --> P5
+    P4 --> P5
+    P5 --> RR1 --> RR2 --> RR3 --> RR4 --> RR5
+    RR5 --> V["A/B 实验验证"]
+    V --> V1["核心：PV 曝光转化率、GMV"]
+    V --> V2["护栏：首页退出率、加载性能、主链路转化"]
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true,theme:'neutral',flowchart:{useMaxWidth:true,htmlLabels:true,curve:'basis'},themeVariables:{fontSize:'12px'}})</script>
+</body>
+</html>
